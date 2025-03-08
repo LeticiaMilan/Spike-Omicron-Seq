@@ -82,8 +82,8 @@ def imprimir_comparativo(sequencia_original, sequencia_mutante):
     tamanho = min(len(sequencia_original), len(sequencia_mutante))
 
     for i in range(0, tamanho):
-        print(f"{i} {sequencia_original[i]} {sequencia_mutante[i]}")
-
+        # print(f"{i} {sequencia_original[i]} {sequencia_mutante[i]}")
+        print(i+1, sequencia_original[i+1], sequencia_mutante[i]) # garantir que o índice comece em 1
 
 # verifica se o número de argumentos é válido
 if len(sys.argv) != 3:
